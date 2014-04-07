@@ -12,23 +12,7 @@ Authentication and client creation
 ----------------------------------
 Before we can use the API, we need to authenticate and create an instance of the appropriate API client.
 
-.. code-block:: node
-  
-  pkgcloud = require('pkgcloud');
-  var rackspace = pkgcloud.dns.createClient({
-    provider: 'rackspace',
-    username: 'rax-user-id',
-    apiKey: '1234567890asdbchehe'
-  });
-
-.. code-block:: ruby
-
-  require 'fog'
-
-  service = Fog::DNS.new :provider => :rackspace,
-    rackspace_username => RACKSPACE_USERNAME,
-    rackspace_api_key => RACKSPACE_API_KEY,
-    rackspace_region => RACKSPACE_REGION
+.. include:: samples/authentication.rst
 
 Create Zone
 -----------------

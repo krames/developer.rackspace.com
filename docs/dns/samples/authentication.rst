@@ -17,3 +17,12 @@
         'username' => '{username}',
         'apiKey'   => '{apiKey}'
     ));
+
+.. code-block:: ruby
+
+  require 'fog'
+
+  service = Fog::DNS.new :provider => :rackspace,
+    rackspace_username => RACKSPACE_USERNAME,
+    rackspace_api_key => RACKSPACE_API_KEY,
+    rackspace_region => RACKSPACE_REGION
